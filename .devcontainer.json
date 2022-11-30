@@ -1,6 +1,6 @@
 {
   "image": "mcr.microsoft.com/devcontainers/python:3.11",
-  "extensions": ["GitHub.copilot", "Iterative.dvc"],
+  "extensions": ["GitHub.copilot", "Iterative.dvc", "trunk.io"],
   "features": {
     "ghcr.io/devcontainers/features/nvidia-cuda:1": {
       "installCudnn": true
@@ -9,6 +9,7 @@
   },
   "postCreateCommand": "pip3 install --user --upgrade pip && pip3 install --user --requirement requirements.txt",
   "settings": {
+    "editor.defaultFormatter": "trunk.io",
     "editor.formatOnSave": true
   }
 }
