@@ -1,0 +1,14 @@
+{
+  "image": "mcr.microsoft.com/devcontainers/python:3.11",
+  "extensions": ["GitHub.copilot", "Iterative.dvc"],
+  "features": {
+    "ghcr.io/devcontainers/features/nvidia-cuda:1": {
+      "installCudnn": true
+    },
+    "ghcr.io/iterative/features/dvc:1": {}
+  },
+  "postCreateCommand": "pip3 install --user --upgrade pip && pip3 install --user --requirement requirements.txt",
+  "settings": {
+    "editor.formatOnSave": true
+  }
+}
